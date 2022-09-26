@@ -34,7 +34,14 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 - As a user, I can click on a “Play Again” button that will restart the game.
 -created branch: treasure-restart
 -created restart game button
+-button will reset all square into the original state
+-
+
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
+-create branch:treasure-counter
+-counter will give us a certain amount of clicks until game over.
+-each click is counted unless the bomb or treasure is clicked
+
 
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
 - As a user, I can see a message informing me that I lost the game if I select the square that contains the bomb.

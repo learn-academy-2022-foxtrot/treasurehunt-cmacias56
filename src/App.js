@@ -17,6 +17,8 @@ const App = () => {
   ])
   const[treasureLocation, setTreasureLocation] = useState(Math.floor(Math.random() *board.length))
   const [bombLocation, setBombLocation] = useState(Math.floor(Math.random() * board.length))
+  
+  const [counter, setCounter] = useState(5)
 
   const handleGamePlay = (clickedSquare) => {
     // makes a copy of the board in state so that we can modify it in this method
@@ -29,7 +31,8 @@ const App = () => {
     setBoard(updateBoard)
    } else {
     updateBoard[clickedSquare] = "🌳"
-    setBoard(updateBoard)
+    setBoard(updateBoard);
+    setCounter(counter - 1);
   }
   }
   const handleReset = () => {
