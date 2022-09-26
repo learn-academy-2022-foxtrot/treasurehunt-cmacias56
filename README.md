@@ -27,13 +27,15 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 -updated the value at the particular index
 
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
-
-
-- As a user, I can click on a “Play Again” button that will restart the game.
-- As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
 -branch treasure-bomb
 -added random  loacation for bomb and treasure into state
 -added conditional 
+
+- As a user, I can click on a “Play Again” button that will restart the game.
+-created branch: treasure-restart
+-created restart game button
+- As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
+
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
 - As a user, I can see a message informing me that I lost the game if I select the square that contains the bomb.
 - As a user, I cannot continue to play the game after I win or lose.
